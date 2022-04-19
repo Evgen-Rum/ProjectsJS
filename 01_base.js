@@ -1,6 +1,6 @@
-// //1 variables
+// 1 variables
 // const firstName = 'Evgenii'
-// //const lastName = 'Rumiantsev' //string
+// const lastName = 'Rumiantsev' //string
 // let age = 23 //number
 // const isProgrammer = true // boolean
 //
@@ -8,15 +8,15 @@
 // let $ = 'some value'
 // const withNum5 = '5'
 
-//2 Mutation
-//console.log('The person\'s name is ' + firstName + ', and the person\'s age is ' + age)
-//alert('The person\'s name is ' + firstName + lastName + ', and the person\'s age is ' + age) //browser only
+// 2 Mutation
+// console.log('The person\'s name is ' + firstName + ', and the person\'s age is ' + age)
+// alert('The person\'s name is ' + firstName + lastName + ', and the person\'s age is ' + age) //browser only
 
-//const lastName = prompt('Please enter last name!')
-//console.log(firstName + ' ' + lastName + ' ' + age)
-//alert(firstName + ' ' + lastName)
+// const lastName = prompt('Please enter last name!')
+// console.log(firstName + ' ' + lastName + ' ' + age)
+// alert(firstName + ' ' + lastName)
 
-//3 operators
+// 3 operators
 // const currentYear = 2022
 // const birthYear = 1999
 //
@@ -44,14 +44,27 @@
 // console.log(a)
 // console.log(--a)
 
-//4 data types
+// 4 data types
 
-const isProgrammer = true //boolean
-const name = 'Evgenii' //string
-const age = 23 //number
-let x
-console.log(typeof isProgrammer)
-console.log(typeof name)
-console.log(typeof age)
-console.log(typeof x) //undefined
-console.log(null) //object
+// const isProgrammer = true //boolean
+// const name = 'Evgenii' //string
+// const age = 23 //number
+// let x
+// console.log(typeof isProgrammer)
+// console.log(typeof name)
+// console.log(typeof age)
+// console.log(typeof x) //undefined
+// console.log(null) //object
+
+// 5 operator precedence
+
+// const fullAge = 26
+// const birthYear = 1999
+// const currentYear = 2022
+//
+//  <= >= < >
+// const isFullAge = currentYear - birthYear >= fullAge //23 < 26 = false
+// console.log(isFullAge)
+
+// link to operator precedence table
+// https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Operator_Precedence
