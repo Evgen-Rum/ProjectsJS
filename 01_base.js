@@ -47,15 +47,16 @@
 
 // 4 data types
 //
-// const isProgrammer = true //boolean
-// const name = 'Evgenii' //string
-// const age = 23 //number
+// const isProgrammer = true // boolean
+// const num = 43.43 // float
+// const name = 'Evgenii' // string
+// const age = 23 // number
 // let x
 // console.log(typeof isProgrammer)
 // console.log(typeof name)
 // console.log(typeof age)
-// console.log(typeof x) //undefined
-// console.log(null) //object
+// console.log(typeof x) // undefined
+// console.log(null) // object
 
 // 5 operator precedence
 //
@@ -64,15 +65,15 @@
 // const currentYear = 2022
 //
 //  <= >= < >
-// const isFullAge = currentYear - birthYear >= fullAge //23 < 26 = false
+// const isFullAge = currentYear - birthYear >= fullAge // 23 < 26 = false
 // console.log(isFullAge)
 //
-// link to link to operator precedence table precedence table
+// link to operator precedence table precedence table
 // https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Operator_Precedence
 
 // 6 conditional statements
 //
-// const learningJS = 'pending' //ready fail pending
+// const learningJS = 'pending' // ready fail pending
 //
 // if (learningJS === 'ready') {
 //     console.log('JS learned!')
