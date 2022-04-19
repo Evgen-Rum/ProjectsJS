@@ -3,29 +3,29 @@
 // const lastName = 'Rumiantsev' //string
 // let age = 23 //number
 // const isProgrammer = true // boolean
-
+//
 // const _ = 'private'
 // let $ = 'some value'
 // const withNum5 = '5'
-
+//
 // 2 Mutation
 // console.log('The person\'s name is ' + firstName + ', and the person\'s age is ' + age)
 // alert('The person\'s name is ' + firstName + lastName + ', and the person\'s age is ' + age) //browser only
-
+//
 // const lastName = prompt('Please enter last name!')
 // console.log(firstName + ' ' + lastName + ' ' + age)
 // alert(firstName + ' ' + lastName)
-
+//
 // 3 operators
 // const currentYear = 2022
 // const birthYear = 1999
-
+//
 // const age = currentYear - birthYear
 // console.log(age)
-
+//
 // let a = 10
 // const b = 5
-
+//
 // let c = 32
 // c += a
 // console.log(c)
@@ -35,7 +35,7 @@
 // console.log(c)
 // c /= a
 // console.log(c)
-
+//
 // console.log(a + b)
 // console.log(a - b)
 // console.log(a * b)
@@ -43,9 +43,9 @@
 // console.log(a++)
 // console.log(a)
 // console.log(--a)
-
+//
 // 4 data types
-
+//
 // const isProgrammer = true //boolean
 // const name = 'Evgenii' //string
 // const age = 23 //number
@@ -55,9 +55,9 @@
 // console.log(typeof age)
 // console.log(typeof x) //undefined
 // console.log(null) //object
-
+//
 // 5 operator precedence
-
+//
 // const fullAge = 26
 // const birthYear = 1999
 // const currentYear = 2022
@@ -65,12 +65,12 @@
 //  <= >= < >
 // const isFullAge = currentYear - birthYear >= fullAge //23 < 26 = false
 // console.log(isFullAge)
-
+//
 // link to link to operator precedence table precedence table
 // https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Operator_Precedence
-
+//
 // 6 conditional statements
-
+//
 // const learningJS = 'pending' //ready fail pending
 //
 // if (learningJS === 'ready') {
@@ -80,42 +80,42 @@
 // } else {
 //     console.log('JS study failed!')
 // }
-
+//
 // const isReady = true
-
+//
 // if (isReady) {
 //     console.log('JS learned')
 // } else {
 //     console.log('JS study failed')
 // }
-
+//
 // isReady ? console.log('JS learned') : console.log('JS study failed')
-
+//
 // const num1 = 42 // number
 // const num2 = '42' // string
-
+//
 // console.log(num1 == num2) // true
 // console.log(num1 === num2) // false
-
+//
 // 7 logical operators
-
+//
 // link to the table of logical operators
 // https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Expressions_and_Operators#%D0%BB%D0%BE%D0%B3%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5_%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%82%D0%BE%D1%80%D1%8B
-
+//
 // 8 functions
-
-function calculateAge(birthYear) {
-    return 2022 - birthYear
-}
-console.log(calculateAge(1999))
-
-function logInfoAbout (name, birthYear) {
-    const age = calculateAge(birthYear)
-    if (age > 0) {
-        console.log('Person\'s name: ' + name + '. Person\'s age: ' + age)
-    } else {
-        console.log('Incorrect birth year value!')
-    }
-}
-
-logInfoAbout('Evgenii', 1999)
+//
+// function calculateAge(birthYear) {
+//     return 2022 - birthYear
+// }
+// console.log(calculateAge(1999))
+//
+// function logInfoAbout (name, birthYear) {
+//     const age = calculateAge(birthYear)
+//     if (age > 0) {
+//         console.log('Person\'s name: ' + name + '. Person\'s age: ' + age)
+//     } else {
+//         console.log('Incorrect birth year value!')
+//     }
+// }
+//
+// logInfoAbout('Evgenii', 1999)
