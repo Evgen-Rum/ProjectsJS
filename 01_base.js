@@ -1,3 +1,4 @@
+
 // 1 variables
 // const firstName = 'Evgenii'
 // const lastName = 'Rumiantsev' //string
@@ -7,7 +8,7 @@
 // const _ = 'private'
 // let $ = 'some value'
 // const withNum5 = '5'
-//
+
 // 2 Mutation
 // console.log('The person\'s name is ' + firstName + ', and the person\'s age is ' + age)
 // alert('The person\'s name is ' + firstName + lastName + ', and the person\'s age is ' + age) //browser only
@@ -15,7 +16,7 @@
 // const lastName = prompt('Please enter last name!')
 // console.log(firstName + ' ' + lastName + ' ' + age)
 // alert(firstName + ' ' + lastName)
-//
+
 // 3 operators
 // const currentYear = 2022
 // const birthYear = 1999
@@ -43,7 +44,7 @@
 // console.log(a++)
 // console.log(a)
 // console.log(--a)
-//
+
 // 4 data types
 //
 // const isProgrammer = true //boolean
@@ -55,7 +56,7 @@
 // console.log(typeof age)
 // console.log(typeof x) //undefined
 // console.log(null) //object
-//
+
 // 5 operator precedence
 //
 // const fullAge = 26
@@ -68,7 +69,7 @@
 //
 // link to link to operator precedence table precedence table
 // https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Operator_Precedence
-//
+
 // 6 conditional statements
 //
 // const learningJS = 'pending' //ready fail pending
@@ -96,12 +97,12 @@
 //
 // console.log(num1 == num2) // true
 // console.log(num1 === num2) // false
-//
+
 // 7 logical operators
 //
 // link to the table of logical operators
 // https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Expressions_and_Operators#%D0%BB%D0%BE%D0%B3%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5_%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%82%D0%BE%D1%80%D1%8B
-//
+
 // 8 functions
 //
 // function calculateAge(birthYear) {
@@ -121,16 +122,31 @@
 // logInfoAbout('Evgenii', 1999)
 
 // 9 arrays
-const cars = ['Mazda', 'Mercedes', 'Ford']
+// const cars = ['Mazda', 'Mercedes', 'Ford']
 // const cars = new Array('Mazda', 'Mercedes', 'Ford')
-console.log(cars)
-console.log(cars[0])
-console.log(cars[1])
-console.log(cars[2])
-console.log(cars[3]) // undefined
+// console.log(cars)
+// console.log(cars[0])
+// console.log(cars[1])
+// console.log(cars[2])
+// console.log(cars[3]) // undefined
+//
+// cars[0] = 'Porsche'
+// console.log(cars)
+// // cars[3] = 'Mazda'
+// cars[cars.length] = 'Mazda'
+// console.log(cars)
 
-cars[0] = 'Porsche'
-console.log(cars)
-// cars[3] = 'Mazda'
-cars[cars.length] = 'Mazda'
-console.log(cars)
+// 10 cycles
+//
+// const cars = ['Mazda', 'Mercedes', 'Ford', 'Porsche']
+//
+// for (let i = 0; i < cars.length; i++) {
+//     const car = cars[i]
+//     console.log(car)
+// }
+//
+// for (let car of cars) {
+//     console.log(car)
+// }
+
+// 11 objects
