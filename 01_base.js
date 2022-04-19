@@ -17,30 +17,33 @@ const withNum5 = '5'
 //alert(firstName + ' ' + lastName)
 
 //3 operators
-const currentYear = 2022
-const birthYear = 1999
+// const currentYear = 2022
+// const birthYear = 1999
+//
+// const age = currentYear - birthYear
+// console.log(age)
+//
+// let a = 10
+// const b = 5
+//
+// let c = 32
+// c += a
+// console.log(c)
+// c -= a
+// console.log(c)
+// c *= a
+// console.log(c)
+// c /= a
+// console.log(c)
+//
+// console.log(a + b)
+// console.log(a - b)
+// console.log(a * b)
+// console.log(a / b)
+// console.log(a++)
+// console.log(a)
+// console.log(--a)
 
-const age = currentYear - birthYear
-console.log(age)
+//4 data types
 
-let a = 10
-const b = 5
-
-let c = 32
-c += a
-console.log(c)
-c -= a
-console.log(c)
-c *= a
-console.log(c)
-c /= a
-console.log(c)
-
-console.log(a + b)
-console.log(a - b)
-console.log(a * b)
-console.log(a / b)
-console.log(a++)
-console.log(a)
-console.log(--a)
 
