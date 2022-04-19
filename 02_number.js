@@ -37,3 +37,9 @@ console.log(+stringInt + 2) // int
 console.log(parseFloat(stringFloat) + 2) // float
 console.log(+stringFloat + 2) //float
 
+console.log(0.4 + 0.2) // 0.6000000000000001
+console.log((0.4 + 0.2).toFixed(1)) // 0.6 string
+console.log(parseFloat((0.4 + 0.2).toFixed(1))) // 0.6 float
+
+
+
