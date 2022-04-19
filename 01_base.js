@@ -66,7 +66,7 @@
 // const isFullAge = currentYear - birthYear >= fullAge //23 < 26 = false
 // console.log(isFullAge)
 
-// link to operator precedence table
+// link to link to operator precedence table precedence table
 // https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Operator_Precedence
 
 // 6 conditional statements
@@ -96,3 +96,11 @@
 
 // console.log(num1 == num2) // true
 // console.log(num1 === num2) // false
+
+// 7 logical operators
+
+// link to the table of logical operators
+// https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Expressions_and_Operators#%D0%BB%D0%BE%D0%B3%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5_%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%82%D0%BE%D1%80%D1%8B
+
+// 8 functions
+
