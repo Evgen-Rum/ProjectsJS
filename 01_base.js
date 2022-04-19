@@ -81,13 +81,15 @@ if (learningJS === 'ready') {
     console.log('JS study failed!')
 }
 
-const isReady = false
+const isReady = true
 
 if (isReady) {
     console.log('JS learned')
 } else {
     console.log('JS study failed')
 }
+
+isReady ? console.log('JS learned') : console.log('JS study failed')
 
 const num1 = 42 // number
 const num2 = '42' // string
