@@ -68,3 +68,16 @@
 
 // link to operator precedence table
 // https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Operator_Precedence
+
+// 6 conditional statements
+
+const learningJS = 'pending' //ready fail pending
+
+if (learningJS === 'ready') {
+    console.log('JS learned!')
+} else if (learningJS === 'pending') {
+    console.log('In process of studying JS!')
+} else {
+    console.log('JS study failed!')
+}
+
