@@ -26,3 +26,14 @@ console.log(Number.isNaN(42))
 console.log(isFinite(Infinity))
 console.log(Number.isFinite(42))
 
+const stringInt = '40'
+const stringFloat = '40.42'
+console.log(stringInt + 2) // string 402
+console.log(Number.parseInt(stringInt) + 2) // int
+console.log(parseInt(stringInt) + 2) // int
+console.log(Number(stringInt) + 2) //int
+console.log(+stringInt + 2) // int
+
+console.log(parseFloat(stringFloat) + 2) // float
+console.log(+stringFloat + 2) //float
+
