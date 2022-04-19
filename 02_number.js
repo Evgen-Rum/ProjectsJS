@@ -43,6 +43,6 @@
 
 //BigInt
 
-console.log(typeof 900719925474099100009) //number
-console.log(typeof 900719925474099100009n) //BigInt
+console.log(typeof 900719925474099100009) // number
+console.log(typeof 900719925474099100009n) // BigInt
 
