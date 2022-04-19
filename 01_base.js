@@ -119,3 +119,18 @@
 // }
 //
 // logInfoAbout('Evgenii', 1999)
+
+// 9 arrays
+const cars = ['Mazda', 'Mercedes', 'Ford']
+// const cars = new Array('Mazda', 'Mercedes', 'Ford')
+console.log(cars)
+console.log(cars[0])
+console.log(cars[1])
+console.log(cars[2])
+console.log(cars[3]) // undefined
+
+cars[0] = 'Porsche'
+console.log(cars)
+// cars[3] = 'Mazda'
+cars[cars.length] = 'Mazda'
+console.log(cars)
