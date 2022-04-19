@@ -81,3 +81,8 @@ if (learningJS === 'ready') {
     console.log('JS study failed!')
 }
 
+const num1 = 42 // number
+const num2 = '42' // string
+
+console.log(num1 == num2) // true
+console.log(num1 === num2) // false
