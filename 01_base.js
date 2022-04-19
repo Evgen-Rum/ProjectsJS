@@ -3,7 +3,7 @@
 // const lastName = 'Rumiantsev' //string
 // let age = 23 //number
 // const isProgrammer = true // boolean
-//
+
 // const _ = 'private'
 // let $ = 'some value'
 // const withNum5 = '5'
@@ -19,13 +19,13 @@
 // 3 operators
 // const currentYear = 2022
 // const birthYear = 1999
-//
+
 // const age = currentYear - birthYear
 // console.log(age)
-//
+
 // let a = 10
 // const b = 5
-//
+
 // let c = 32
 // c += a
 // console.log(c)
@@ -35,7 +35,7 @@
 // console.log(c)
 // c /= a
 // console.log(c)
-//
+
 // console.log(a + b)
 // console.log(a - b)
 // console.log(a * b)
@@ -71,28 +71,28 @@
 
 // 6 conditional statements
 
-const learningJS = 'pending' //ready fail pending
+// const learningJS = 'pending' //ready fail pending
+//
+// if (learningJS === 'ready') {
+//     console.log('JS learned!')
+// } else if (learningJS === 'pending') {
+//     console.log('In process of studying JS!')
+// } else {
+//     console.log('JS study failed!')
+// }
 
-if (learningJS === 'ready') {
-    console.log('JS learned!')
-} else if (learningJS === 'pending') {
-    console.log('In process of studying JS!')
-} else {
-    console.log('JS study failed!')
-}
+// const isReady = true
 
-const isReady = true
+// if (isReady) {
+//     console.log('JS learned')
+// } else {
+//     console.log('JS study failed')
+// }
 
-if (isReady) {
-    console.log('JS learned')
-} else {
-    console.log('JS study failed')
-}
+// isReady ? console.log('JS learned') : console.log('JS study failed')
 
-isReady ? console.log('JS learned') : console.log('JS study failed')
+// const num1 = 42 // number
+// const num2 = '42' // string
 
-const num1 = 42 // number
-const num2 = '42' // string
-
-console.log(num1 == num2) // true
-console.log(num1 === num2) // false
+// console.log(num1 == num2) // true
+// console.log(num1 === num2) // false
