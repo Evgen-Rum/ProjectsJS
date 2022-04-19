@@ -150,3 +150,23 @@
 // }
 
 // 11 objects
+//
+// const person = {
+//     firstName: 'Evgenii',
+//     lastName: 'Rumiantsev',
+//     birthYear: 1999,
+//     languages: ['Ru', 'Eng', 'BY'],
+//     hasWife: false,
+//     welcome: function () {
+//         console.log('Welcome')
+//     }
+// }
+// console.log(person)
+// console.log(person.firstName)
+// console.log(person['lastName'])
+// const key = 'birthYear'
+// console.log(person[key])
+// person.welcome()
+// person.hasWife = true
+// person.isProgrammer = true
+
