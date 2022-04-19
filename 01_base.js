@@ -46,4 +46,12 @@
 
 //4 data types
 
-
+const isProgrammer = true //boolean
+const name = 'Evgenii' //string
+const age = 23 //number
+let x
+console.log(typeof isProgrammer)
+console.log(typeof name)
+console.log(typeof age)
+console.log(typeof x) //undefined
+console.log(null) //object
