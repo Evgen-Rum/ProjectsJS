@@ -104,3 +104,18 @@
 
 // 8 functions
 
+function calculateAge(birthYear) {
+    return 2022 - birthYear
+}
+console.log(calculateAge(1999))
+
+function logInfoAbout (name, birthYear) {
+    const age = calculateAge(birthYear)
+    if (age > 0) {
+        console.log('Person\'s name: ' + name + '. Person\'s age: ' + age)
+    } else {
+        console.log('Incorrect birth year value!')
+    }
+}
+
+logInfoAbout('Evgenii', 1999)
