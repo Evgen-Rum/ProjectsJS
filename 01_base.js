@@ -151,7 +151,7 @@
 // }
 
 // 11 objects
-//
+
 // const person = {
 //     firstName: 'Evgenii',
 //     lastName: 'Rumiantsev',
