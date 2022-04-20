@@ -65,7 +65,7 @@
 // console.log(Math.trunc(2.9)) // returns the integer part of a number by removing all decimals (13.37 = 13 42.87 = 42 -0.123 = -0)
 // console.log(Math.random())
 //
-// // examples
+// examples
 //
 // console.log(Math.random() * 101) // random decimal number from 0 to 100
 //
