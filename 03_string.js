@@ -33,20 +33,20 @@ const age = 23
 // console.log(pass.trimStart())
 // console.log(pass.trimEnd())
 
-function logPerson(arr, name, age) {
-    // console.log(arr, name, age)
-    if (age < 0) {
-       age = `Incorrect age value! Man ${name} has not yet been born`
-    }
-    return `${arr[0]}${name}${arr[1]}${age}${arr[2]}`
-}
-
-const personName = 'Evgenii'
-const personAge = 23
-const output = logPerson`Name: ${personName}, age: ${personAge} !`
-console.log(output)
-
-const personName1 = 'Victor'
-const personAge1 = -1
-const output1 = logPerson`Name: ${personName1}, age: ${personAge1} !`
-console.log(output1)
+// function logPerson(arr, name, age) {
+//     // console.log(arr, name, age)
+//     if (age < 0) {
+//        age = `Incorrect age value! Man ${name} has not yet been born`
+//     }
+//     return `${arr[0]}${name}${arr[1]}${age}${arr[2]}`
+// }
+//
+// const personName = 'Evgenii'
+// const personAge = 23
+// const output = logPerson`Name: ${personName}, age: ${personAge} !`
+// console.log(output)
+//
+// const personName1 = 'Victor'
+// const personAge1 = -1
+// const output1 = logPerson`Name: ${personName1}, age: ${personAge1} !`
+// console.log(output1)
