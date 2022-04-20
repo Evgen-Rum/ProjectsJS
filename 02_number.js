@@ -51,26 +51,26 @@
 
 // Math
 
-console.log(Math.E)
-console.log(Math.PI)
-
-console.log(Math.sqrt(25))
-console.log(Math.pow(5, 2))
-console.log(Math.abs(-42))
-console.log(Math.max(24, 24, 345, 45, 3423, 1))
-console.log(Math.min(3, 34, 66, 877, 8, 2, 6456))
-console.log(Math.floor(2.9)) // rounding up
-console.log(Math.ceil(2.9)) // rounding down
-console.log(Math.round(2.9)) // if 0.5 and more - rounding up. If less than 0.5 - rounding down (2.5 = 3  2.4 = 2)
-console.log(Math.trunc(2.9)) // returns the integer part of a number by removing all decimals (13.37 = 13 42.87 = 42 -0.123 = -0)
-console.log(Math.random())
-
-// examples
-
-console.log(Math.random() * 101) // random decimal number from 0 to 100
-
-function getRandomBetween(min, max) {
-    return Math.floor(Math.random() * (max - min + 1) + min)
-}
-
-console.log(getRandomBetween(10, 42))
+// console.log(Math.E)
+// console.log(Math.PI)
+//
+// console.log(Math.sqrt(25))
+// console.log(Math.pow(5, 2))
+// console.log(Math.abs(-42))
+// console.log(Math.max(24, 24, 345, 45, 3423, 1))
+// console.log(Math.min(3, 34, 66, 877, 8, 2, 6456))
+// console.log(Math.floor(2.9)) // rounding up
+// console.log(Math.ceil(2.9)) // rounding down
+// console.log(Math.round(2.9)) // if 0.5 and more - rounding up. If less than 0.5 - rounding down (2.5 = 3  2.4 = 2)
+// console.log(Math.trunc(2.9)) // returns the integer part of a number by removing all decimals (13.37 = 13 42.87 = 42 -0.123 = -0)
+// console.log(Math.random())
+//
+// // examples
+//
+// console.log(Math.random() * 101) // random decimal number from 0 to 100
+//
+// function getRandomBetween(min, max) {
+//     return Math.floor(Math.random() * (max - min + 1) + min)
+// }
+//
+// console.log(getRandomBetween(10, 42))
