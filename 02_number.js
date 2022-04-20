@@ -67,4 +67,10 @@ console.log(Math.random())
 
 // examples
 
-console.log(Math.random() * 100) // random number from 0 to 100
+console.log(Math.random() * 101) // random decimal number from 0 to 100
+
+function getRandomBetween(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) + min)
+}
+
+console.log(getRandomBetween(10, 42))
