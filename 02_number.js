@@ -45,4 +45,7 @@
 
 console.log(typeof 900719925474099100009) // number
 console.log(typeof 900719925474099100009n) // BigInt
+console.log(parseInt(10n) - 4)
+console.log(10n - BigInt(4))
+console.log(5n / 2n)
 
