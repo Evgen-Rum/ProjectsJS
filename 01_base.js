@@ -1,3 +1,4 @@
+
 // 1 variables
 // const firstName = 'Evgenii'
 // const lastName = 'Rumiantsev' //string
