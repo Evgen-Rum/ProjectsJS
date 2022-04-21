@@ -30,23 +30,37 @@
 
 // 4 arrow functions
 
-function greet(name) {    // f declaration
-    console.log('Hello', name, '!')
+// function greet(name) {    // f declaration
+//     console.log('Hello', name, '!')
+// }
+// greet('Evgenii')
+//
+// const arrow = (name) => {   // f expression
+//     console.log('Hello ' + name + ' !')
+// }
+// arrow('Victor')
+//
+// const arrow2 = name => console.log(`Hello ${name} !`)   // f expression
+// arrow2('Tatyana')
+//
+// // greet = arrow = arrow2
+//
+// const pow2 = num => console.log(num ** 2)   // f expression
+// pow2(5)
+
+// 5 default settings
+
+const sum = (a = 1, b = 2) => a + b
+
+console.log(sum())
+console.log(sum(31, 24))
+
+function sumAll(...all) {
+    let result = 0
+    for (let num of all) {
+        result +=num
+    }
+    return result
 }
-greet('Evgenii')
 
-const arrow = (name) => {   // f expression
-    console.log('Hello ' + name + ' !')
-}
-arrow('Victor')
-
-const arrow2 = name => console.log(`Hello ${name} !`)   // f expression
-arrow2('Tatyana')
-
-// greet = arrow = arrow2
-
-const pow2 = num => console.log(num ** 2)   // f expression
-pow2(5)
-
-
-
+console.log(sumAll(1, 2, 3, 4, 5, 6, 7))
