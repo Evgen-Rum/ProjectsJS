@@ -50,17 +50,30 @@
 
 // 5 default settings
 
-const sum = (a = 1, b = 2) => a + b
+// const sum = (a = 1, b = 2) => a + b
+//
+// console.log(sum())
+// console.log(sum(31, 24))
+//
+// function sumAll(...all) {
+//     let result = 0
+//     for (let num of all) {
+//         result +=num
+//     }
+//     return result
+// }
+//
+// console.log(sumAll(1, 2, 3, 4, 5, 6, 7))
 
-console.log(sum())
-console.log(sum(31, 24))
+// 6 f closure
 
-function sumAll(...all) {
-    let result = 0
-    for (let num of all) {
-        result +=num
+function createMember(name) {
+    return function(lastName) {
+        console.log(`Member ${name} ${lastName} is created!`)
     }
-    return result
 }
 
-console.log(sumAll(1, 2, 3, 4, 5, 6, 7))
+const logOfMember = createMember('Evgenii')
+
+console.log(logOfMember('Rumiantsev'))
+logOfMember('lastName')
