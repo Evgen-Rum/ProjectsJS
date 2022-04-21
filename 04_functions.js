@@ -67,13 +67,13 @@
 
 // 6 f closure
 
-function createMember(name) {
-    return function(lastName) {
-        console.log(`Member ${name} ${lastName} is created!`)
-    }
-}
-
-const logOfMember = createMember('Evgenii')
-
-console.log(logOfMember('Rumiantsev'))
-logOfMember('lastName')
+// function createMember(name) {
+//     return function(lastName) {
+//         console.log(`Member ${name} ${lastName} is created!`)
+//     }
+// }
+//
+// const logOfMember = createMember('Evgenii')
+//
+// console.log(logOfMember('Rumiantsev'))
+// logOfMember('lastName')
