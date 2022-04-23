@@ -1,6 +1,6 @@
 
-const cars = ['Mazda', 'Mercedes', 'BMW', 'Audi', 'Ford']
-const fib = [1, 1, 2, 3, 5, 8, 13]
+// const cars = ['Mazda', 'Mercedes', 'BMW', 'Audi', 'Ford']
+// const fib = [1, 1, 2, 3, 5, 8, 13]
 //  console.log(cars)
 
 // // function
@@ -109,6 +109,8 @@ const fib = [1, 1, 2, 3, 5, 8, 13]
 //     return acc
 // }, 0)
 // console.log(allBudget)
+
+
 
 // Task 1
 // const text = 'Hey! We study arrays in JS'
