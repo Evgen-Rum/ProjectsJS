@@ -50,12 +50,26 @@ const people = [
  {name: 'Denis', budget: 3000}
 ]
 
-const index = people.findIndex(function(person) {
- return person.budget === 4600
-})
-console.log(index)
+// let findedPerson
+// for (const person of people) {
+//  if (person.budget === 2000) {
+//   findedPerson = person
+//  }
+// }
+// console.log(findedPerson)
 
-const person = people.find(function(person) {
+// const index = people.findIndex(function(person) {
+//  return person.budget === 4600
+// })
+// console.log(index)
+//
+// const person = people.find(function(person) {
+//  return person.budget === 3000
+// })
+// console.log(person)
+
+const person = people.find((person) => {
  return person.budget === 3000
 })
 console.log(person)
+
