@@ -86,9 +86,9 @@ const fib = [1, 1, 2, 3, 5, 8, 13]
 // console.log(fib)
 
 const pow2 = num => num ** 2
-const sqrt = num => Math.sqrt(num)
+// const sqrt = num => Math.sqrt(num)
 
-const pow2Fib = fib.map(pow2).map(sqrt)
+const pow2Fib = fib.map(pow2).map(Math.sqrt)
 console.log(pow2Fib)
 
 // Task 1
