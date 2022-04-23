@@ -86,10 +86,14 @@ const fib = [1, 1, 2, 3, 5, 8, 13]
 // console.log(fib)
 
 const pow2 = num => num ** 2
-// const sqrt = num => Math.sqrt(num)
+// // const sqrt = num => Math.sqrt(num)
+// const pow2Fib = fib.map(pow2).map(Math.sqrt)
+// console.log(pow2Fib)
 
-const pow2Fib = fib.map(pow2).map(Math.sqrt)
+const pow2Fib = fib.map(pow2)
+const filteredNum = pow2Fib.filter(num => num > 20)
 console.log(pow2Fib)
+console.log(filteredNum)
 
 // Task 1
 // const text = 'Hey! We study arrays in JS'
