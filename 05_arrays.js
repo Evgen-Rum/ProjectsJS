@@ -1,30 +1,42 @@
 
 const cars = ['Mazda', 'Mercedes', 'BMW', 'Audi', 'Ford']
 const fib = [1, 1, 2, 3, 5, 8, 13]
-console.log(cars)
+// console.log(cars)
 
-// function
-function someFunction() {
-    // some logic...
-}
+// // function
+// function someFunction() {
+//     // some logic...
+// }
+//
+// // Method
+// cars.push('Porshe') // adding an element to the beginning
+// console.log(cars)
+//
+// cars.unshift('Honda') // adding an element to the end
+// console.log(cars)
+//
+// cars.shift() // removes and returns the first element of the array
+// console.log(cars)
+//
+// const firstElem = cars.shift()
+// console.log(firstElem, ' is the first and removed element of the array')
+// console.log(cars)
 
-// Method
-cars.push('Porshe') // adding an element to the beginning
-console.log(cars)
+// cars.pop() // removes and returns the last element of the array
+// console.log(cars)
 
-cars.unshift('Honda') // adding an element to the end
-console.log(cars)
+// const lastElem = cars.pop()
+// console.log(lastElem, ' is the last and removed element of the array')
+// console.log(cars)
 
-cars.shift() // removes and returns the first element of the array
-console.log(cars)
+// console.log(cars.reverse())
 
-const firstElem = cars.shift()
-console.log(firstElem, ' is the first and removed element of the array')
-console.log(cars)
+// Task 1
+// const text = 'Hey! We study arrays in JS'
+// const revText = text.split('').reverse().join('')
+// /* split() - makes an array from a string
+// reverse() - changes the sequence of elements of the given array and returns the reverse sequence
+// join(delimeter) - concatenates the elements of an array into a string with the specified delimiter
+//  */
+// console.log(revText)
 
-cars.pop() // removes and returns the last element of the array
-console.log(cars)
-
-const lastElem = cars.pop()
-console.log(lastElem, ' is the last and removed element of the array')
-console.log(cars)
