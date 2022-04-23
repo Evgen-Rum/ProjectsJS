@@ -35,11 +35,11 @@
 // cars[index] = 'Porsche'
 // console.log(cars)
 
-const people = [
- {name: 'Evgenii', budget: 4600},
- {name: 'Anton', budget: 2000},
- {name: 'Denis', budget: 3000}
-]
+// const people = [
+//  {name: 'Evgenii', budget: 4600},
+//  {name: 'Anton', budget: 2000},
+//  {name: 'Denis', budget: 3000}
+// ]
 
 // let findedPerson
 // for (const person of people) {
@@ -64,10 +64,13 @@ const people = [
 // })
 // console.log(person)
 
-const person = people.find(person => person.budget === 3000)
-console.log(person)
+// const person = people.find(person => person.budget === 3000)
+// console.log(person)
 
+const cities = ['Minsk', 'NY', 'Berlin', 'Warsaw', 'Brest']
 
+console.log(cities.includes('Minsk'))
+console.log(cities.includes('Moskow'))
 
 // Task 1
 // const text = 'Hey! We study arrays in JS'
