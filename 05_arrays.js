@@ -1,7 +1,7 @@
 
 const cars = ['Mazda', 'Mercedes', 'BMW', 'Audi', 'Ford']
 const fib = [1, 1, 2, 3, 5, 8, 13]
-// console.log(cars)
+ console.log(cars)
 
 // // function
 // function someFunction() {
@@ -40,3 +40,7 @@ const fib = [1, 1, 2, 3, 5, 8, 13]
 //  */
 // console.log(revText)
 
+
+const index = cars.indexOf('Mazda')
+cars[index] = 'Porsche'
+console.log(cars)
