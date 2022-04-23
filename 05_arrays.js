@@ -1,7 +1,7 @@
 
-const cars = ['Mazda', 'Mercedes', 'BMW', 'Audi', 'Ford']
-const fib = [1, 1, 2, 3, 5, 8, 13]
- console.log(cars)
+// const cars = ['Mazda', 'Mercedes', 'BMW', 'Audi', 'Ford']
+// const fib = [1, 1, 2, 3, 5, 8, 13]
+//  console.log(cars)
 
 // // function
 // function someFunction() {
@@ -40,7 +40,22 @@ const fib = [1, 1, 2, 3, 5, 8, 13]
 //  */
 // console.log(revText)
 
+// const index = cars.indexOf('Mazda')
+// cars[index] = 'Porsche'
+// console.log(cars)
 
-const index = cars.indexOf('Mazda')
-cars[index] = 'Porsche'
-console.log(cars)
+const people = [
+ {name: 'Evgenii', budget: 4600},
+ {name: 'Anton', budget: 2000},
+ {name: 'Denis', budget: 3000}
+]
+
+const index = people.findIndex(function(person) {
+ return person.budget === 4600
+})
+console.log(index)
+
+const person = people.find(function(person) {
+ return person.budget === 3000
+})
+console.log(person)
