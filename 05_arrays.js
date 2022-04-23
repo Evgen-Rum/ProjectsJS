@@ -68,8 +68,10 @@ const people = [
 // })
 // console.log(person)
 
-const person = people.find((person) => {
- return person.budget === 3000
-})
-console.log(person)
+// const person = people.find((person) => {
+//  return person.budget === 3000
+// })
+// console.log(person)
 
+const person = people.find(person => person.budget === 3000)
+console.log(person)
