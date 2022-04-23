@@ -104,8 +104,8 @@
 //  {name: 'Denis', budget: 3000}
 // ]
 //
-// const allBudget = people.filter(person => person.budget > 2000).reduce((acc, person) => {
-//     acc += person.budget
+// const allBudget = people.filter(person => person.budget > 2000).reduce((accumulator, person) => {
+//     accumulator += person.budget
 //     return acc
 // }, 0)
 // console.log(allBudget)
