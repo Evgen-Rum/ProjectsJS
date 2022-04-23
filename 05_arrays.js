@@ -98,17 +98,17 @@ const fib = [1, 1, 2, 3, 5, 8, 13]
 // const pow2Fib = fib.map(pow2).filter(num => num > 20)
 // console.log(pow2Fib)
 
-const people = [
- {name: 'Evgenii', budget: 4600},
- {name: 'Anton', budget: 2000},
- {name: 'Denis', budget: 3000}
-]
-
-const allBudget = people.filter(person => person.budget > 2000).reduce((acc, person) => {
-    acc += person.budget
-    return acc
-}, 0)
-console.log(allBudget)
+// const people = [
+//  {name: 'Evgenii', budget: 4600},
+//  {name: 'Anton', budget: 2000},
+//  {name: 'Denis', budget: 3000}
+// ]
+//
+// const allBudget = people.filter(person => person.budget > 2000).reduce((acc, person) => {
+//     acc += person.budget
+//     return acc
+// }, 0)
+// console.log(allBudget)
 
 // Task 1
 // const text = 'Hey! We study arrays in JS'
