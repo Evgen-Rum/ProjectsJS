@@ -75,15 +75,20 @@ const fib = [1, 1, 2, 3, 5, 8, 13]
 // console.log(cities.includes('Minsk'))
 // console.log(cities.includes('Moskow'))
 
-const upperCaseCars = cars.map(car => {
-    return car.toUpperCase()
-})
-console.log(upperCaseCars)
-console.log(cars)
+// const upperCaseCars = cars.map(car => {
+//     return car.toUpperCase()
+// })
+// console.log(upperCaseCars)
+// console.log(cars)
+//
+// const pow2Fib = fib.map(num => num ** 2)
+// console.log(pow2Fib)
+// console.log(fib)
 
-const pow2Fib = fib.map(num => num ** 2)
+const pow2 = num => num ** 2
+
+const pow2Fib = fib.map(pow2)
 console.log(pow2Fib)
-console.log(fib)
 
 // Task 1
 // const text = 'Hey! We study arrays in JS'
