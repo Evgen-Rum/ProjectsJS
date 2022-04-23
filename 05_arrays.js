@@ -31,15 +31,6 @@
 
 // console.log(cars.reverse())
 
-// Task 1
-// const text = 'Hey! We study arrays in JS'
-// const revText = text.split('').reverse().join('')
-// /* split() - makes an array from a string
-// reverse() - changes the sequence of elements of the given array and returns the reverse sequence
-// join(delimeter) - concatenates the elements of an array into a string with the specified delimiter
-//  */
-// console.log(revText)
-
 // const index = cars.indexOf('Mazda')
 // cars[index] = 'Porsche'
 // console.log(cars)
@@ -75,3 +66,14 @@ const people = [
 
 const person = people.find(person => person.budget === 3000)
 console.log(person)
+
+
+
+// Task 1
+// const text = 'Hey! We study arrays in JS'
+// const revText = text.split('').reverse().join('')
+// /* split() - makes an array from a string
+// reverse() - changes the sequence of elements of the given array and returns the reverse sequence
+// join(delimeter) - concatenates the elements of an array into a string with the specified delimiter
+//  */
+// console.log(revText)
