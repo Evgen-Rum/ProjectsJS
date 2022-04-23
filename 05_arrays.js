@@ -67,10 +67,10 @@
 // const person = people.find(person => person.budget === 3000)
 // console.log(person)
 
-const cities = ['Minsk', 'NY', 'Berlin', 'Warsaw', 'Brest']
-
-console.log(cities.includes('Minsk'))
-console.log(cities.includes('Moskow'))
+// const cities = ['Minsk', 'NY', 'Berlin', 'Warsaw', 'Brest']
+//
+// console.log(cities.includes('Minsk'))
+// console.log(cities.includes('Moskow'))
 
 // Task 1
 // const text = 'Hey! We study arrays in JS'
