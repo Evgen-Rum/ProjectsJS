@@ -8,3 +8,6 @@ const person = {
         console.log('Hi all!')
     }
 }
+
+console.log(person.firstName)
+console.log(person['age'])
