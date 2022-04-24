@@ -19,3 +19,6 @@ console.log(person['key_' + (1 + 2)])
 console.log(person.key_3)
 console.log(person['key_3'])
 person.greet()
+
+delete person['key_3']
+console.log(person)
