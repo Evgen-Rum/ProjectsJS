@@ -75,3 +75,17 @@ it is necessary to check using the method hasOwnProperty()!!!
 
 // Context
 
+// const logger = {
+//     // keys() {
+//     //     console.log('Object keys:', Object.keys(this)) // in this situation this = logger
+//     // },
+//     keysAndValues() {
+//         console.log('Object keys:', Object.keys(this), 'Keys value:', Object.values(this) )
+//     }
+// }
+
+// logger.keysAndValues.call(person)
+
+// const bound = logger.keys.bind(person) // bind() method returns a function
+// logger.keys.call(person)  // call() = bind() but no function return
+
