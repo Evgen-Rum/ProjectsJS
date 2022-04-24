@@ -11,14 +11,22 @@ const person = {
     }
 }
 
-console.log(person)
-console.log(person.firstName)
-console.log(person['age'])
-console.log(person['complex key'])
-console.log(person['key_' + (1 + 2)])
-console.log(person.key_3)
-console.log(person['key_3'])
-person.greet()
+// console.log(person)
+// console.log(person.firstName)
+// console.log(person['age'])
+// console.log(person['complex key'])
+// console.log(person['key_' + (1 + 2)])
+// console.log(person.key_3)
+// console.log(person['key_3'])
+// person.greet()
 
 delete person['key_3']
 console.log(person)
+
+// const fName = person.firstName
+// const age = person.age
+// const languages = person.languages
+
+const {firstName, age, languages} = person
+
+console.log(firstName, age, languages)
