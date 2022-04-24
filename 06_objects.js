@@ -98,9 +98,7 @@ const logger = {
     //         console.log(`Key: ${key} - Value: ${self[key]}`)
     //     })
     // }
-
     // or
-
     keysAndValues() {
         Object.keys(this).forEach(function(key) {
             console.log(`Key: ${key} - Value: ${this[key]}`)
