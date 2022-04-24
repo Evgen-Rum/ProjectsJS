@@ -82,10 +82,29 @@ const logger = {
     // keysAndValues() {
     //     console.log('Object keys:', Object.keys(this), 'Keys value:', Object.values(this) )
     // }
+    // keysAndValues() {
+    //     Object.keys(this).forEach(key => {
+    //         console.log(`Key: ${key} - Value: ${this[key]}`)
+    //     })
+    // }
+    /*
+    The function keyword creates its own context in js,
+    therefore, when using this word in a method, errors will occur.
+    Here are ways to fix this situation.
+     */
+    // keysAndValues() {
+    //     const self = this
+    //     Object.keys(this).forEach(function(key) {
+    //         console.log(`Key: ${key} - Value: ${self[key]}`)
+    //     })
+    // }
+
+    // or
+
     keysAndValues() {
-        Object.keys(this).forEach(key => {
+        Object.keys(this).forEach(function(key) {
             console.log(`Key: ${key} - Value: ${this[key]}`)
-        })
+        }.bind(this))
     }
 }
 
