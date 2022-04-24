@@ -1,15 +1,18 @@
-// const person = {
-//     firstName: 'Evgenii',
-//     lastName: 'Rumiantsev',
-//     age: 23,
-//     isProgrammer: true,
-//     languages: ['ru', 'en', 'by'],
-//     'complex key': 'Complex value',
-//     ['key_' + (1 + 2)]: 'Computed key',
-//     greet() {
-//         console.log('Hi all!')
-//     }
-// }
+const person = {
+    firstName: 'Evgenii',
+    lastName: 'Rumiantsev',
+    age: 23,
+    isProgrammer: true,
+    languages: ['ru', 'en', 'by'],
+    'complex key': 'Complex value',
+    ['key_' + (1 + 2)]: 'Computed key',
+    greet() {
+        console.log('Hi all!')
+    },
+    info() {
+        console.log('Information about a person named:', this.firstName, this.lastName)
+    }
+}
 // console.log(person)
 
 // console.log(person)
@@ -50,3 +53,23 @@
 // console.log(firstName1, personAge1, languages1)
 // console.log(person1)
 
+// for (let key in person) {
+//     if (person.hasOwnProperty(key)) {  // The hasOwnProperty() method returns a boolean indicating whether the object contains the specified property.
+//         console.log('key: ' + key)
+//         console.log('value: ', person[key])
+//     }
+// }
+/*
+Attention! For (in) iterates over the prototype of an object,
+which can lead to errors. Therefore, when using this construction,
+it is necessary to check using the method hasOwnProperty()!!!
+ */
+// console.log(person.toString())
+
+// console.log(Object.keys(person))
+// Object.keys(person).forEach(key => {
+//     console.log('key: ' + key)
+//     console.log('value: ', person[key])
+// })
+
+// person.info()
