@@ -71,5 +71,7 @@ it is necessary to check using the method hasOwnProperty()!!!
 //     console.log('key: ' + key)
 //     console.log('value: ', person[key])
 // })
-
 // person.info()
+
+// Context
+
