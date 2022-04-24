@@ -88,7 +88,7 @@ const logger = {
     //     })
     // }
     /*
-    The function keyword creates its own context in js,
+    The function keyword creates its own context unlike arrow functions,
     therefore, when using this word in a method, errors will occur.
     Here are ways to fix this situation.
      */
