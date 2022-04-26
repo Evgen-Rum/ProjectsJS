@@ -99,16 +99,35 @@ const logger = {
     //     })
     // }
     // or
-    keysAndValues() {
-        Object.keys(this).forEach(function(key) {
+    // keysAndValues() {
+    //     Object.keys(this).forEach(function(key) {
+    //         console.log(`Key: ${key} - Value: ${this[key]}`)
+    //     }.bind(this))
+    // }
+
+    withParams(top = false, between = false, bottom = false) {
+        if (top) {
+            console.log('------- Start -------')
+        }
+        Object.keys(this).forEach((key, index, array) => {
             console.log(`Key: ${key} - Value: ${this[key]}`)
-        }.bind(this))
+            if (between && index != array.length - 1) {
+                console.log('--------------')
+            }
+        })
+        if (bottom) {
+            console.log('------- End -------')
+        }
     }
 }
 
+logger.withParams.call(person, true, true, true)
+
+logger.withParams.apply(person, [true, true, true])
+
 // logger.keysAndValues.call(person)
 
-logger.keysAndValues.call(person)
+// logger.keysAndValues.call(person)
 
 // const bound = logger.keys.bind(person) // bind() method returns a function
 // logger.keys.call(person)  // call() = bind() but no function return
