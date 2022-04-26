@@ -111,7 +111,7 @@ const logger = {
         }
         Object.keys(this).forEach((key, index, array) => {
             console.log(`Key: ${key} - Value: ${this[key]}`)
-            if (between && index != array.length - 1) {
+            if (between && index !== array.length - 1) {
                 console.log('--------------')
             }
         })
