@@ -18,19 +18,36 @@
 //     console.log('After 2 seconds')
 // }, 2000)
 
+// const delay = (wait = 1000) => {
+//         const promise = new Promise((resolve, reject) => {
+//             setTimeout(() => {
+//             resolve()
+//             }, wait)
+//         })
+//     return promise
+// }
+//
+// delay(2500).then(() => {
+//     console.log('After 2 second')
+// }).catch(err => {
+//     console.error(err)
+// }).finally( () => {
+//         console.log('Finally')
+// })
+
 const delay = (wait = 1000) => {
-        const promise = new Promise((resolve, reject) => {
-            setTimeout(() => {
-            resolve()
-            }, wait)
-        })
+    const promise = new Promise((resolve, reject) => {
+        setTimeout(() => {
+            reject('Something went wrong! Try Again!')
+        }, wait)
+    })
     return promise
 }
 
 delay(2500).then(() => {
     console.log('After 2 second')
 }).catch(err => {
-    console.error(err)
+    console.error('Error: ', err)
 }).finally( () => {
-        console.log('Finally')
+    console.log('Finally')
 })
