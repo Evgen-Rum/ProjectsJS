@@ -25,8 +25,13 @@ setTimeout(() => {
     addStylesTo(heading2, 'Practice!', 'green', '3rem')
 }, 3000)
 
+const link = heading3.querySelector('a')
+link.addEventListener('click', () =>{
+    console.log('Click on link')
+})
+
 setTimeout(() => {
-    addStylesTo(heading3.children[0], 'And everything will work out!', 'white', '4rem')
+    addStylesTo(link, 'And everything will work out!', 'white', '4rem')
 }, 4500)
 
 function addStylesTo(node, text, textColor = 'red', fontSize) {
