@@ -40,3 +40,17 @@ function addStylesTo(node, text, textColor = 'red', fontSize) {
         node.style.fontSize = fontSize
     }
 }
+
+// https://developer.mozilla.org/ru/docs/Web/Events
+
+heading.onclick = () => {
+    if (heading.style.color === 'red') {
+        heading.style.color = '#000'
+        heading.style.background = '#fff'
+    } else {
+        heading.style.color = 'red'
+        heading.style.background = '#000'
+    }
+}
+
+
