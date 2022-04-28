@@ -3,9 +3,13 @@ const heading = document.getElementById('hello')
 // const heading2 = document.getElementsByClassName('h2-class')[0]
 // const heading2 = document.querySelector('h2')
 // const heading2 = document.querySelector('.h2-class')
-const heading2 = document.querySelector('#sub-hello')
-console.log(heading2)
+const heading2 = document.querySelector('#sub-hello') // .querySelector - only 1 element
 
+console.dir(heading2)
+
+const heading3 = heading2.nextElementSibling
+
+console.log(heading3)
 
 // console.log(heading)
 setTimeout(() => {
