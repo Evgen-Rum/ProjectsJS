@@ -26,7 +26,7 @@ setTimeout(() => {
 }, 3000)
 
 setTimeout(() => {
-    addStylesTo(heading3, 'And everything will work out!', 'white', '4rem')
+    addStylesTo(heading3.children[0], 'And everything will work out!', 'white', '4rem')
 }, 4500)
 
 function addStylesTo(node, text, textColor = 'red', fontSize) {
@@ -36,6 +36,8 @@ function addStylesTo(node, text, textColor = 'red', fontSize) {
     node.style.textAlign = 'center'
     node.style.background = 'black'
     node.style.padding = '2rem'
+    node.style.width = '100%'
+    node.style.display = 'block'
     if (fontSize) {
         node.style.fontSize = fontSize
     }
