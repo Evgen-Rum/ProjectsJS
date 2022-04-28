@@ -53,4 +53,12 @@ heading.onclick = () => {
     }
 }
 
-
+heading2.addEventListener('dblclick', () => {
+    if (heading2.style.color === 'green') {
+        heading2.style.color = '#000'
+        heading2.style.background = '#fff'
+    } else {
+        heading2.style.color = 'green'
+        heading2.style.background = '#000'
+    }
+})
