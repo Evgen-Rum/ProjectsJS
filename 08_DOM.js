@@ -18,17 +18,21 @@ console.log(heading3)
 // console.log(heading)
 
 setTimeout(() => {
-    addStylesTo(heading)
-}, 2000)
+    addStylesTo(heading, 'JavaScript')
+}, 1500)
 
 setTimeout(() => {
-    addStylesTo(heading3)
-}, 2000)
+    addStylesTo(heading2, 'Practice!', 'green')
+}, 3000)
 
-function addStylesTo(node) {
-    console.dir('Content before change: ' +  heading.textContent)
-    node.textContent = 'Changed from JavaScript!'
-    node.style.color = 'white'
+setTimeout(() => {
+    addStylesTo(heading3, 'And everything will work out!', 'white')
+}, 4500)
+
+function addStylesTo(node, text, textColor = 'red') {
+    console.dir('Content before change: ' +  node.textContent)
+    node.textContent = text
+    node.style.color = textColor
     node.style.textAlign = 'center'
     node.style.background = 'black'
     node.style.padding = '2rem'
