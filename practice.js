@@ -30,11 +30,22 @@ letters from ato z. Return a new sorted string, the longest possible,
 containing distinct letters - each taken only once - coming from s1 or s2
  */
 
-const s1 = 'xyaabbbccccdefww'
-const s2 = 'xxxxyyyyabklmopq'
+// const s1 = 'xyaabbbccccdefww'
+// const s2 = 'xxxxyyyyabklmopq'
+//
+// function longest(s1, s2) {
+//     return Array.from(new Set(s1 + s2)).sort().join('')
+// }
+//
+// console.log(longest(s1, s2))
 
-function longest(s1, s2) {
-    return Array.from(new Set(s1 + s2)).sort().join('')
+// Task4 - Given an array of ones and zeroes, convert the equivalent binary value to an integer.
+// Eg: [0, 0, 0, 1] is treated as 0001 which is the binary representation of 1.
+
+const binaryArr = [0, 1, 1, 0]
+
+function binaryArrayToNumber(arr) {
+    return parseInt(arr.join(''), 2)
 }
 
-console.log(longest(s1, s2))
+console.log(binaryArrayToNumber(binaryArr))
