@@ -1,5 +1,6 @@
 // Tasks from codewars
 
+
 // Task1 - count the number of vowels in a string
 // function getCount(str) {
 //     let vowelsCount = 0;
@@ -14,6 +15,7 @@
 //
 // console.log(getCount('fa del   igoku'))
 
+
 // Task2 - find the maximum and minimum values in a string of numbers
 // const numbers = "1 9 3 4 -5"
 //     function highAndLow(numbers){
@@ -24,6 +26,7 @@
 // }
 //
 // console.log(highAndLow(numbers))
+
 
 /* Task3 - Take 2 strings s1 and s2 including only
 letters from ato z. Return a new sorted string, the longest possible,
@@ -37,6 +40,7 @@ containing distinct letters - each taken only once - coming from s1 or s2
 // }
 //
 // console.log(longest(s1, s2))
+
 
 // Task4 - Given an array of ones and zeroes, convert the equivalent binary value to an integer.
 // Eg: [0, 0, 0, 1] is treated as 0001 which is the binary representation of 1.
