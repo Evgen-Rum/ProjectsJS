@@ -86,6 +86,6 @@ Given a string of digits, you should replace any digit below 5 with '0' and any 
 Return the resulting string.
 Note: input will never be an empty string
  */
-const result = (strOfNum) => {
-    return strOfNum.split('').map(n => n < 5 ? 0 : 1).join('')
-}
+// const result = (strOfNum) => {
+//     return strOfNum.split('').map(n => n < 5 ? 0 : 1).join('')
+// }
