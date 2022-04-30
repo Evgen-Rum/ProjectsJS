@@ -1,7 +1,7 @@
 // Tasks from codewars
 
 
-// Task1 - count the number of vowels in a string
+// Task 1 - count the number of vowels in a string
 // function getCount(str) {
 //     let vowelsCount = 0;
 //     let vowelsList = 'aeiou'
@@ -16,7 +16,7 @@
 // console.log(getCount('fa del   igoku'))
 
 
-// Task2 - find the maximum and minimum values in a string of numbers
+// Task 2 - find the maximum and minimum values in a string of numbers
 // const numbers = "1 9 3 4 -5"
 //     function highAndLow(numbers){
 //         numbers = numbers.split(' ').map(Number)
@@ -28,7 +28,7 @@
 // console.log(highAndLow(numbers))
 
 
-/* Task3 - Take 2 strings s1 and s2 including only
+/* Task 3 - Take 2 strings s1 and s2 including only
 letters from ato z. Return a new sorted string, the longest possible,
 containing distinct letters - each taken only once - coming from s1 or s2
  */
@@ -42,7 +42,7 @@ containing distinct letters - each taken only once - coming from s1 or s2
 // console.log(longest(s1, s2))
 
 
-// Task4 - Given an array of ones and zeroes, convert the equivalent binary value to an integer.
+// Task 4 - Given an array of ones and zeroes, convert the equivalent binary value to an integer.
 // Eg: [0, 0, 0, 1] is treated as 0001 which is the binary representation of 1.
 // const binaryArr = [0, 1, 1, 0]
 //
@@ -52,7 +52,7 @@ containing distinct letters - each taken only once - coming from s1 or s2
 //
 // console.log(binaryArrayToNumber(binaryArr))
 
-/* Task5
+/* Task 5
 Deoxyribonucleic acid, DNA is the primary information storage molecule in biological systems.
 It is composed of four nucleic acid bases Guanine ('G'), Cytosine ('C'), Adenine ('A'), and Thymine ('T').
 Ribonucleic acid, RNA, is the primary messenger molecule in cells.
@@ -68,15 +68,24 @@ Create a function which translates a given DNA string into RNA.
 //
 // console.log(DNAtoRNA(dna))
 
-/* Task6
+/* Task 6
 Write a program that finds the summation of every number from 1 to num.
  The number will always be a positive integer greater than 0.
  */
-let summation = (num) => {
-    let sum = 0
-    for (let i = 0; i <= num; i++) {
-        sum += i
-    }
-    return sum
+// let summation = (num) => {
+//     let sum = 0
+//     for (let i = 0; i <= num; i++) {
+//         sum += i
+//     }
+//     return sum
+// }
+// console.log(summation(5))
+
+/* Task 7
+Given a string of digits, you should replace any digit below 5 with '0' and any digit 5 and above with '1'.
+Return the resulting string.
+Note: input will never be an empty string
+ */
+const result = (strOfNum) => {
+    return strOfNum.split('').map(n => n < 5 ? 0 : 1).join('')
 }
-console.log(summation(5))
