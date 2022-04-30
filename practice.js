@@ -60,10 +60,23 @@ RNA differs slightly from DNA its chemical structure and contains no Thymine.
 In RNA Thymine is replaced by another nucleic acid Uracil ('U').
 Create a function which translates a given DNA string into RNA.
  */
-const dna = 'TUUUTUT'
-function DNAtoRNA(dna) {
-    const result = dna.replace(/T/g, 'U')
-    return result
-}
+// const dna = 'TUUUTUT'
+// function DNAtoRNA(dna) {
+//     const result = dna.replace(/T/g, 'U')
+//     return result
+// }
+//
+// console.log(DNAtoRNA(dna))
 
-console.log(DNAtoRNA(dna))
+/* Task6
+Write a program that finds the summation of every number from 1 to num.
+ The number will always be a positive integer greater than 0.
+ */
+let summation = (num) => {
+    let sum = 0
+    for (let i = 0; i <= num; i++) {
+        sum += i
+    }
+    return sum
+}
+console.log(summation(5))
