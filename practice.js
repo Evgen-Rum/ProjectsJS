@@ -104,12 +104,21 @@ Given an array of integers, return a new array with each value doubled.
 /* Task 9
 This kata is about multiplying a given number by eight if it is an even number and by nine otherwise.
  */
-function simpleMultiplication(number) {
-    if (number % 2 == 0) {
-        return number * 8
-    } else {
-        return number * 9
-    }
-}
+// function simpleMultiplication(number) {
+//     if (number % 2 == 0) {
+//         return number * 8
+//     } else {
+//         return number * 9
+//     }
+// }
+//
+// console.log(simpleMultiplication(2))
 
-console.log(simpleMultiplication(2))
+/* Task 10
+We need a function that can transform a number into a string.
+What ways of achieving this do you know?
+ */
+function numberToString(num) {
+    return num.toString()
+}
+console.log(numberToString(2))
