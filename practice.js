@@ -89,3 +89,14 @@ Note: input will never be an empty string
 // const result = (strOfNum) => {
 //     return strOfNum.split('').map(n => n < 5 ? 0 : 1).join('')
 // }
+
+/* Task 8
+Given an array of integers, return a new array with each value doubled.
+ */
+const x = [1, 2, 3, 4, 5]
+
+function maps(x) {
+    return x.map((element) => element * 2)
+}
+
+console.log(maps(x))
