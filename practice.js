@@ -118,7 +118,30 @@ This kata is about multiplying a given number by eight if it is an even number a
 We need a function that can transform a number into a string.
 What ways of achieving this do you know?
  */
-function numberToString(num) {
-    return num.toString()
+// function numberToString(num) {
+//     return num.toString()
+// }
+// console.log(numberToString(2))
+
+/* Task 11
+Consider an array/list of sheep where some sheep may be missing from their place.
+We need a function that counts the number of sheep present in the array (true means present).
+ */
+const arrayOfSheep = [true,  true,  true,  false,
+    true,  true,  true,  true ,
+    true,  false, true,  false,
+    true,  false, false, true ,
+    true,  true,  true,  true ,
+    false, false, true,  true]
+
+function sheepCounter(arrayOfSheep) {
+    let counter = 0
+ for (let sheep of arrayOfSheep) {
+     if (sheep === true) {
+         counter++
+     }
+ }
+    return counter
 }
-console.log(numberToString(2))
+
+console.log(sheepCounter(arrayOfSheep))
