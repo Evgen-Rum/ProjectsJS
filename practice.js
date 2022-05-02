@@ -93,10 +93,23 @@ Note: input will never be an empty string
 /* Task 8
 Given an array of integers, return a new array with each value doubled.
  */
-const x = [1, 2, 3, 4, 5]
+// const x = [1, 2, 3, 4, 5]
+//
+// function maps(x) {
+//     return x.map((element) => element * 2)
+// }
+//
+// console.log(maps(x))
 
-function maps(x) {
-    return x.map((element) => element * 2)
+/* Task 9
+This kata is about multiplying a given number by eight if it is an even number and by nine otherwise.
+ */
+function simpleMultiplication(number) {
+    if (number % 2 == 0) {
+        return number * 8
+    } else {
+        return number * 9
+    }
 }
 
-console.log(maps(x))
+console.log(simpleMultiplication(2))
