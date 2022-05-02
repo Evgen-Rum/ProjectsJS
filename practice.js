@@ -127,21 +127,25 @@ What ways of achieving this do you know?
 Consider an array/list of sheep where some sheep may be missing from their place.
 We need a function that counts the number of sheep present in the array (true means present).
  */
-const arrayOfSheep = [true,  true,  true,  false,
-    true,  true,  true,  true ,
-    true,  false, true,  false,
-    true,  false, false, true ,
-    true,  true,  true,  true ,
-    false, false, true,  true]
+// const arrayOfSheep = [true,  true,  true,  false,
+//     true,  true,  true,  true ,
+//     true,  false, true,  false,
+//     true,  false, false, true ,
+//     true,  true,  true,  true ,
+//     false, false, true,  true]
+//
+// function sheepCounter(arrayOfSheep) {
+//     let counter = 0
+//  for (let sheep of arrayOfSheep) {
+//      if (sheep === true) {
+//          counter++
+//      }
+//  }
+//     return counter
+// }
+//
+// console.log(sheepCounter(arrayOfSheep))
 
-function sheepCounter(arrayOfSheep) {
-    let counter = 0
- for (let sheep of arrayOfSheep) {
-     if (sheep === true) {
-         counter++
-     }
- }
-    return counter
-}
+/* Task 12
 
-console.log(sheepCounter(arrayOfSheep))
+ */
