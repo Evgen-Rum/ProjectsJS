@@ -178,11 +178,20 @@ if bmi <= 25.0 return "Normal"
 if bmi <= 30.0 return "Overweight"
 if bmi > 30 return "Obese"
  */
+//
+//  const bmi = (weight, height, bmi = weight/Math.pow(height,2)) =>
+//      bmi <= 18.5 ? "Underweight" :
+//      bmi <= 25 ? "Normal" :
+//      bmi <= 30 ? "Overweight" : "Obese";
+//
+//
+// console.log(bmi(183, 150))
 
- const bmi = (weight, height, bmi = weight/Math.pow(height,2)) =>
-     bmi <= 18.5 ? "Underweight" :
-     bmi <= 25 ? "Normal" :
-     bmi <= 30 ? "Overweight" : "Obese";
+/* Task 15
+Given a non-empty array of integers, return the result of multiplying the values together in order
+ */
+const arr = [1, 2, 3, 4]
 
+const grow = (array) => array.reduce((previousVal, currentVal) => previousVal * currentVal)
 
-console.log(bmi(183, 150))
+console.log(grow(arr))
