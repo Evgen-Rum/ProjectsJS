@@ -159,14 +159,30 @@ Very simple, given an integer or a floating-point number, find its opposite.
 Write a function which calculates the average of the numbers in a given list.
 Note: Empty arrays should return 0.
  */
-const arr = [1, 2, 3, 4, 5, 6]
+// const arr = [1, 2, 3, 4, 5, 6]
+//
+// function findAverage(array) {
+//  if (array.length <= 0) {
+//   return 0
+//  } else {
+//   return array.reduce((previousValue, currentValue) => (previousValue + currentValue)) / array.length
+//  }
+// }
+//
+// console.log(findAverage(arr))
 
-function findAverage(array) {
- if (array.length <= 0) {
-  return 0
- } else {
-  return array.reduce((previousValue, currentValue) => (previousValue + currentValue)) / array.length
- }
-}
+/* Task 14
+Write function bmi that calculates body mass index (bmi = weight / height2).
+if bmi <= 18.5 return "Underweight"
+if bmi <= 25.0 return "Normal"
+if bmi <= 30.0 return "Overweight"
+if bmi > 30 return "Obese"
+ */
 
-console.log(findAverage(arr))
+ const bmi = (weight, height, bmi = weight/Math.pow(height,2)) =>
+     bmi <= 18.5 ? "Underweight" :
+     bmi <= 25 ? "Normal" :
+     bmi <= 30 ? "Overweight" : "Obese";
+
+
+console.log(bmi(183, 150))
