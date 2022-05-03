@@ -149,9 +149,24 @@ We need a function that counts the number of sheep present in the array (true me
 /* Task 12
 Very simple, given an integer or a floating-point number, find its opposite.
  */
+// function opposite(number) {
+//  return -number
+// }
+//
+// console.log(opposite(-1))
 
-function opposite(number) {
- return -number
+/* Task 13
+Write a function which calculates the average of the numbers in a given list.
+Note: Empty arrays should return 0.
+ */
+const arr = [1, 2, 3, 4, 5, 6]
+
+function findAverage(array) {
+ if (array.length <= 0) {
+  return 0
+ } else {
+  return array.reduce((previousValue, currentValue) => (previousValue + currentValue)) / array.length
+ }
 }
 
-console.log(opposite(-1))
+console.log(findAverage(arr))
