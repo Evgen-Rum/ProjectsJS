@@ -147,5 +147,11 @@ We need a function that counts the number of sheep present in the array (true me
 // console.log(sheepCounter(arrayOfSheep))
 
 /* Task 12
-
+Very simple, given an integer or a floating-point number, find its opposite.
  */
+
+function opposite(number) {
+ return -number
+}
+
+console.log(opposite(-1))
