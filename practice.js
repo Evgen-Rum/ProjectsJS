@@ -190,8 +190,22 @@ if bmi > 30 return "Obese"
 /* Task 15
 Given a non-empty array of integers, return the result of multiplying the values together in order
  */
-const arr = [1, 2, 3, 4]
+// const arr = [1, 2, 3, 4]
+//
+// const grow = (array) => array.reduce((previousVal, currentVal) => previousVal * currentVal)
+//
+// console.log(grow(arr))
 
-const grow = (array) => array.reduce((previousVal, currentVal) => previousVal * currentVal)
+/* Task 16
+A hero is on his way to the castle to complete his mission.
+However, he's been told that the castle is surrounded with a couple of powerful dragons!
+Each dragon takes 2 bullets to be defeated, our hero has no idea how many bullets he should carry..
+Assuming he's gonna grab a specific given number of bullets and move forward to fight another
+specific given number of dragons, will he survive?
+Return True if yes, False otherwise :)
+ */
+function hero(bullets, dragons){
+    return bullets >= dragons * 2
+}
 
-console.log(grow(arr))
+console.log(hero(10, 5))
