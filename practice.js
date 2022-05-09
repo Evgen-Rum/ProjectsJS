@@ -217,7 +217,14 @@ Your task is to write a function that takes a string and return a new string wit
 For example, the string "This website is for losers LOL!" would become "Ths wbst s fr lsrs LL!".
 Note: for this kata y isn't considered a vowel.
  */
+// let disemVowel = (str) => str.replace(/[aeiou]/gi, '')
+//
+// console.log(disemVowel('testaeiouyAEIOUYtest'));
 
-let disemVowel = (str) => str.replace(/[aeiou]/gi, '')
-
-console.log(disemVowel('testaeiouyAEIOUYtest'));
+/* Task 18
+Make a function that will return a greeting statement that uses an input;
+your program should return, "Hello, <name> how are you doing today?".
+ */
+function greet(name) {
+    return `Hello, ${name} how are you doing today?`
+}
