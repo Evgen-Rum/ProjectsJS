@@ -204,8 +204,20 @@ Assuming he's gonna grab a specific given number of bullets and move forward to 
 specific given number of dragons, will he survive?
 Return True if yes, False otherwise :)
  */
-function hero(bullets, dragons){
-    return bullets >= dragons * 2
-}
+// function hero(bullets, dragons){
+//     return bullets >= dragons * 2
+// }
+//
+// console.log(hero(10, 5))
 
-console.log(hero(10, 5))
+/* Task 17
+Trolls are attacking your comment section!
+A common way to deal with this situation is to remove all of the vowels from the trolls' comments, neutralizing the threat.
+Your task is to write a function that takes a string and return a new string with all vowels removed.
+For example, the string "This website is for losers LOL!" would become "Ths wbst s fr lsrs LL!".
+Note: for this kata y isn't considered a vowel.
+ */
+
+let disemVowel = (str) => str.replace(/[aeiou]/gi, '')
+
+console.log(disemVowel('testaeiouyAEIOUYtest'));
