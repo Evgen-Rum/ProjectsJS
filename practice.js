@@ -234,13 +234,24 @@ Your classmates asked you to copy some paperwork for them.
 You know that there are 'n' classmates and the paperwork has 'm' pages.
 Your task is to calculate how many blank pages do you need. If n < 0 or m < 0 return 0.
  */
+//
+// const paperWork = (n, m) => {
+//     if (m < 0 || n < 0) {
+//         return 0
+//     } else {
+//         return m * n
+//     }
+// }
+//
+// console.log(paperWork(4, -3))
 
-const paperWork = (n, m) => {
-    if (m < 0 || n < 0) {
-        return 0
-    } else {
-        return m * n
-    }
+/* Task 20
+Write a function to convert a name into initials.
+This kata strictly takes two words with one space in between them.
+The output should be two capital letters with a dot separating them.
+ */
+function abbrevName(name) {
+    return name.split(" ").map((n) => n[0]).join(".").toUpperCase()
 }
 
-console.log(paperWork(4, -3))
+console.log(abbrevName('evgen rum'))
