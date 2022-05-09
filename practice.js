@@ -225,6 +225,22 @@ Note: for this kata y isn't considered a vowel.
 Make a function that will return a greeting statement that uses an input;
 your program should return, "Hello, <name> how are you doing today?".
  */
-function greet(name) {
-    return `Hello, ${name} how are you doing today?`
+// function greet(name) {
+//     return `Hello, ${name} how are you doing today?`
+// }
+
+/* Task 19
+Your classmates asked you to copy some paperwork for them.
+You know that there are 'n' classmates and the paperwork has 'm' pages.
+Your task is to calculate how many blank pages do you need. If n < 0 or m < 0 return 0.
+ */
+
+const paperWork = (n, m) => {
+    if (m < 0 || n < 0) {
+        return 0
+    } else {
+        return m * n
+    }
 }
+
+console.log(paperWork(4, -3))
