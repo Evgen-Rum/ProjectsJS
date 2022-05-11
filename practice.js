@@ -286,7 +286,17 @@ Note: if there is nothing to sum, the sum is default to 0.
 /* Task 23
 Write a function which converts the input string to uppercase.
  */
-function makeUpperCase(str) {
-    return str.toUpperCase()
+// function makeUpperCase(str) {
+//     return str.toUpperCase()
+// }
+// console.log(makeUpperCase('im a programmer'))
+
+/* Task 24
+Given a set of numbers, return the additive inverse of each.
+Each positive becomes negatives, and the negatives become positives.
+ */
+function invert(array) {
+    return array.map(n => -n)
 }
-console.log(makeUpperCase('im a programmer'))
+
+console.log(invert([1, -2, 3, -4, 5, -6]))
