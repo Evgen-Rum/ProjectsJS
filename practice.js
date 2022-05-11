@@ -305,8 +305,34 @@ Each positive becomes negatives, and the negatives become positives.
 In this kata you will create a function that takes a list of non-negative integers
 and strings and returns a new list with the strings filtered out.
  */
-function filterList(arr) {
-    return arr.filter(n => Number.isInteger(n))
+// function filterList(arr) {
+//     return arr.filter(n => Number.isInteger(n))
+// }
+//
+// console.log(filterList([1, 'f', 2, -4, 'd']))
+
+/* Task 26
+Check to see if a string has the same amount of 'x's and 'o's.
+The method must return a boolean and be case insensitive.
+The string can contain any char.
+ */
+function XO(str) {
+    let oSum = 0
+    let xSum = 0
+    for (let i = 0; i < str.length; i++) {
+        if (str[i] === 'o' || str[i] === 'O') {
+            oSum += 1
+        } else if (str[i] === 'x' || str[i] === 'X') {
+            xSum += 1
+        }
+    }
+    if (xSum === oSum) {
+        return true
+    } else{
+        return false
+    }
 }
 
-console.log(filterList([1, 'f', 2, -4, 'd']))
+
+
+console.log(XO('xoOOxxXooxosd'))
