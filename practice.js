@@ -316,32 +316,32 @@ Check to see if a string has the same amount of 'x's and 'o's.
 The method must return a boolean and be case insensitive.
 The string can contain any char.
  */
-function XO(str) {
-    let oSum = 0
-    let xSum = 0
-    for (let i = 0; i < str.length; i++) {
-        if (str[i] === 'o' || str[i] === 'O') {
-            oSum += 1
-        } else if (str[i] === 'x' || str[i] === 'X') {
-            xSum += 1
-        }
-    }
-    if (xSum === oSum) {
-        return true
-    } else{
-        return false
-    }
-}
-
-const XO1 = str => {
-    str = str.toLowerCase().split('')
-    return str.filter(x => x === 'x').length === str.filter(o => o === 'o').length
-}
-
-function XO2(str) {
-    let x = str.match(/x/gi)
-    let o = str.match(/o/gi)
-    return (x && x.length) === (o && o.length)
-}
-
-console.log(XO('xoOOxxXooxosd'))
+// function XO(str) {
+//     let oSum = 0
+//     let xSum = 0
+//     for (let i = 0; i < str.length; i++) {
+//         if (str[i] === 'o' || str[i] === 'O') {
+//             oSum += 1
+//         } else if (str[i] === 'x' || str[i] === 'X') {
+//             xSum += 1
+//         }
+//     }
+//     if (xSum === oSum) {
+//         return true
+//     } else{
+//         return false
+//     }
+// }
+//
+// const XO1 = str => {
+//     str = str.toLowerCase().split('')
+//     return str.filter(x => x === 'x').length === str.filter(o => o === 'o').length
+// }
+//
+// function XO2(str) {
+//     let x = str.match(/x/gi)
+//     let o = str.match(/o/gi)
+//     return (x && x.length) === (o && o.length)
+// }
+//
+// console.log(XO('xoOOxxXooxosd'))
