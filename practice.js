@@ -338,4 +338,10 @@ const XO1 = str => {
     return str.filter(x => x === 'x').length === str.filter(o => o === 'o').length
 }
 
+function XO2(str) {
+    let x = str.match(/x/gi)
+    let o = str.match(/o/gi)
+    return (x && x.length) === (o && o.length)
+}
+
 console.log(XO('xoOOxxXooxosd'))
