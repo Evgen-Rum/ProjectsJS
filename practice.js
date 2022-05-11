@@ -295,8 +295,18 @@ Write a function which converts the input string to uppercase.
 Given a set of numbers, return the additive inverse of each.
 Each positive becomes negatives, and the negatives become positives.
  */
-function invert(array) {
-    return array.map(n => -n)
+// function invert(array) {
+//     return array.map(n => -n)
+// }
+//
+// console.log(invert([1, -2, 3, -4, 5, -6]))
+
+/* Task 25
+In this kata you will create a function that takes a list of non-negative integers
+and strings and returns a new list with the strings filtered out.
+ */
+function filterList(arr) {
+    return arr.filter(n => Number.isInteger(n))
 }
 
-console.log(invert([1, -2, 3, -4, 5, -6]))
+console.log(filterList([1, 'f', 2, -4, 'd']))
