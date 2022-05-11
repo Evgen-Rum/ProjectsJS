@@ -333,6 +333,9 @@ function XO(str) {
     }
 }
 
-
+const XO1 = str => {
+    str = str.toLowerCase().split('')
+    return str.filter(x => x === 'x').length === str.filter(o => o === 'o').length
+}
 
 console.log(XO('xoOOxxXooxosd'))
