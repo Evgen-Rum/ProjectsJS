@@ -480,18 +480,63 @@ The order of the queue NEVER changes, and
 The front person in the queue (i.e. the first element in the array/list) proceeds to a till as soon as it becomes free.
 N.B. You should assume that all the test input will be valid, as specified above.
  */
+//
+// const customers = [1, 2, 3, 4, 5, 6, 7, 8]
+//
+// function queueTime(customers, n) {
+//     let tills = Array(n).fill(0);
+//
+//     customers.forEach((customer) => {
+//         let nextTill = tills.indexOf(Math.min(...tills))
+//         tills[nextTill] += customer;
+//     });
+//
+//     return Math.max(...tills);
+// }
+//
+// console.log(queueTime(customers, 3))
 
-const customers = [1, 2, 3, 4, 5, 6, 7, 8]
+/* Task 31
+Given an array (arr) as an argument complete the function countSmileys
+that should return the total number of smiling faces.
+Rules for a smiling face:
+Each smiley face must contain a valid pair of eyes. Eyes can be marked as : or ;
+A smiley face can have a nose but it does not have to. Valid characters for a nose are - or ~
+Every smiling face must have a smiling mouth that should be marked with either ) or D
+No additional characters are allowed except for those mentioned.
+Valid smiley face examples: :) :D ;-D :~)
+Invalid smiley faces: ;( :> :} :]
+ */
 
-function queueTime(customers, n) {
-    let tills = Array(n).fill(0);
+const arr = [':)', ';(', ';}', ':-D']
 
-    customers.forEach((customer) => {
-        let nextTill = tills.indexOf(Math.min(...tills))
-        tills[nextTill] += customer;
-    });
-
-    return Math.max(...tills);
+function countSmileys(arr) {
+    const smile1 = ':)'
+    const smile2 = ':D'
+    const smile3 = ':~)'
+    const smile4 = ':-)'
+    const smile5 = ':-D'
+    const smile6 = ':~D'
+    const smile7 = ';)'
+    const smile8 = ';D'
+    const smile9 = ';-)'
+    const smile10 = ';-D'
+    const smile11 = ';~)'
+    const smile12 = ';~D'
+    let counter = 0
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] === smile1 || arr[i] === smile2 || arr[i] === smile3 || arr[i] === smile4 || arr[i] == smile5 || arr[i] == smile6
+            || arr[i] === smile7 || arr[i] === smile8 || arr[i] === smile9 || arr[i] === smile10 || arr[i] === smile11 ||
+            arr[i] === smile12)
+            counter++
+    }
+    return counter
 }
 
-console.log(queueTime(customers, 3))
+function countSmileys1(arr) {
+    return arr.filter(x => /^[:;][-~]?[)D]$/.test(x)).length
+}
+
+const countSmileys2 = arr => arr.reduce((f, s) => f + /^[:;][-~]?[)D]$/.test(s), 0)
+
+console.log(countSmileys1(arr))
