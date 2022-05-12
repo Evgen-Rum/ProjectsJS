@@ -440,27 +440,58 @@ const person2 = {
 bind(person1, logPerson)
 bind(person2, logPerson)
  */
+//
+// function logPerson() {
+//     console.log(`Person ${this.name}, ${this.age}, ${this.job}`)
+// }
+//
+// const person1 = {
+//     name: 'Evgenii',
+//     age: 23,
+//     job: 'Frontend developer'
+// }
+// const person2 = {
+//     name: 'Victor',
+//     age: 24,
+//     job: 'Worker'
+// }
+//
+// bind(person1, logPerson)()
+// bind(person2, logPerson)()
+//
+// function bind(context, fn) {
+//     return function(...args) {
+//         fn.apply(context, args)
+//     }
+// }
 
-function logPerson() {
-    console.log(`Person ${this.name}, ${this.age}, ${this.job}`)
+/* Task 30
+There is a queue for the self-checkout tills at the supermarket.
+Your task is write a function to calculate the total time required for all the customers to check out!
+input
+customers: an array of positive integers representing the queue.
+Each integer represents a customer, and its value is the amount of time they require to check out.
+n: a positive integer, the number of checkout tills.
+output
+The function should return an integer, the total time required.
+Clarifications
+There is only ONE queue serving many tills, and
+The order of the queue NEVER changes, and
+The front person in the queue (i.e. the first element in the array/list) proceeds to a till as soon as it becomes free.
+N.B. You should assume that all the test input will be valid, as specified above.
+ */
+
+const customers = [1, 2, 3, 4, 5, 6, 7, 8]
+
+function queueTime(customers, n) {
+    let tills = Array(n).fill(0);
+
+    customers.forEach((customer) => {
+        let nextTill = tills.indexOf(Math.min(...tills))
+        tills[nextTill] += customer;
+    });
+
+    return Math.max(...tills);
 }
 
-const person1 = {
-    name: 'Evgenii',
-    age: 23,
-    job: 'Frontend developer'
-}
-const person2 = {
-    name: 'Victor',
-    age: 24,
-    job: 'Worker'
-}
-
-bind(person1, logPerson)()
-bind(person2, logPerson)()
-
-function bind(context, fn) {
-    return function(...args) {
-        fn.apply(context, args)
-    }
-}
+console.log(queueTime(customers, 3))
