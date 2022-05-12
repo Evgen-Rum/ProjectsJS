@@ -351,23 +351,41 @@ Write a function that will find all the anagrams of a word from a list.
 You will be given two inputs a word and an array with words.
 You should return an array of all the anagrams or an empty array if there are none.
  */
-function anagrams(word, array) {
-    let firstWord = word.split('').sort().join('')
-    let anagramsArray = []
-    for (let i = 0; i < array.length; i++) {
-        if (array[i].split('').sort().join('') === firstWord) {
-            anagramsArray.push(array[i])
-        }
+// function anagrams(word, array) {
+//     let firstWord = word.split('').sort().join('')
+//     let anagramsArray = []
+//     for (let i = 0; i < array.length; i++) {
+//         if (array[i].split('').sort().join('') === firstWord) {
+//             anagramsArray.push(array[i])
+//         }
+//     }
+//     return anagramsArray
+// }
+//
+// function anagrams1(word, words) {
+//     return words.filter(w => reorder(w) === reorder(word) )
+// }
+//
+// function reorder(word) {
+//     return word.split('').sort().join('')
+// }
+//
+// console.log(anagrams('abba', ['aabb', 'abcd', 'bbaa', 'dada']))
+
+/* Task 28
+
+ */
+function digPow(num, p) {
+    let numArr = Array.from('' + num).map(Number)
+    let result = 0
+    for (let i = 0; i < numArr.length; i++) {
+        result += Math.pow(numArr[i], (p + i))
     }
-    return anagramsArray
+    if (result % num) {
+        return -1
+    } else {
+        return result / num
+    }
 }
 
-function anagrams1(word, words) {
-    return words.filter(w => reorder(w) === reorder(word) )
-}
-
-function reorder(word) {
-    return word.split('').sort().join('')
-}
-
-console.log(anagrams('abba', ['aabb', 'abcd', 'bbaa', 'dada']))
+console.log(digPow(1234, 1))
