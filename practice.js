@@ -418,3 +418,49 @@ Note: n and p will always be given as strictly positive integers.
 // }
 //
 // console.log(digPow1(89, 1))
+
+/* Task 29
+Create bind function.
+For use:
+function logPerson() {
+    console.log(`Person ${this.name}, ${this.age}, ${this.job}`)
+}
+
+const person1 = {
+    name: 'Evgenii',
+    age: 23,
+    job: 'Frontend developer'
+}
+const person2 = {
+    name: 'Victor',
+    age: 24,
+    job: 'Worker'
+}
+
+bind(person1, logPerson)
+bind(person2, logPerson)
+ */
+
+function logPerson() {
+    console.log(`Person ${this.name}, ${this.age}, ${this.job}`)
+}
+
+const person1 = {
+    name: 'Evgenii',
+    age: 23,
+    job: 'Frontend developer'
+}
+const person2 = {
+    name: 'Victor',
+    age: 24,
+    job: 'Worker'
+}
+
+bind(person1, logPerson)()
+bind(person2, logPerson)()
+
+function bind(context, fn) {
+    return function(...args) {
+        fn.apply(context, args)
+    }
+}
