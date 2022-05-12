@@ -345,3 +345,29 @@ The string can contain any char.
 // }
 //
 // console.log(XO('xoOOxxXooxosd'))
+
+/*  Task 27
+Write a function that will find all the anagrams of a word from a list.
+You will be given two inputs a word and an array with words.
+You should return an array of all the anagrams or an empty array if there are none.
+ */
+function anagrams(word, array) {
+    let firstWord = word.split('').sort().join('')
+    let anagramsArray = []
+    for (let i = 0; i < array.length; i++) {
+        if (array[i].split('').sort().join('') === firstWord) {
+            anagramsArray.push(array[i])
+        }
+    }
+    return anagramsArray
+}
+
+function anagrams1(word, words) {
+    return words.filter(w => reorder(w) === reorder(word) )
+}
+
+function reorder(word) {
+    return word.split('').sort().join('')
+}
+
+console.log(anagrams('abba', ['aabb', 'abcd', 'bbaa', 'dada']))
