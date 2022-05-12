@@ -351,43 +351,43 @@ Write a function that will find all the anagrams of a word from a list.
 You will be given two inputs a word and an array with words.
 You should return an array of all the anagrams or an empty array if there are none.
  */
-function anagrams(word, array) {
-    let firstWord = word.split('').sort().join('')
-    let anagramsArray = []
-    for (let i = 0; i < array.length; i++) {
-        if (array[i].split('').sort().join('') === firstWord) {
-            anagramsArray.push(array[i])
-        }
-    }
-    return anagramsArray
-}
-
-function anagrams1(word, words) {
-    return words.filter(w => reorder(w) === reorder(word) )
-}
-
-function reorder(word) {
-    return word.split('').sort().join('')
-}
-
-const array = ['aabb', 'abcd', 'bbaa', 'dada']
-
-Array.prototype.anagramFinder = function(word) {
-    let firstWord = word.split('').sort().join('')
-    let anagramsArray = []
-    for (let i = 0; i < this.length; i++) {
-        if (this[i].split('').sort().join('') === firstWord) {
-            anagramsArray.push(this[i])
-        }
-    }
-    return anagramsArray
-}
-
-console.log(array.anagramFinder('abba'))
-
-console.log(anagrams1('abba', array))
-
-console.log(anagrams('abba', array))
+// function anagrams(word, array) {
+//     let firstWord = word.split('').sort().join('')
+//     let anagramsArray = []
+//     for (let i = 0; i < array.length; i++) {
+//         if (array[i].split('').sort().join('') === firstWord) {
+//             anagramsArray.push(array[i])
+//         }
+//     }
+//     return anagramsArray
+// }
+//
+// function anagrams1(word, words) {
+//     return words.filter(w => reorder(w) === reorder(word) )
+// }
+//
+// function reorder(word) {
+//     return word.split('').sort().join('')
+// }
+//
+// const array = ['aabb', 'abcd', 'bbaa', 'dada']
+//
+// Array.prototype.anagramFinder = function(word) {
+//     let firstWord = word.split('').sort().join('')
+//     let anagramsArray = []
+//     for (let i = 0; i < this.length; i++) {
+//         if (this[i].split('').sort().join('') === firstWord) {
+//             anagramsArray.push(this[i])
+//         }
+//     }
+//     return anagramsArray
+// }
+//
+// console.log(array.anagramFinder('abba'))
+//
+// console.log(anagrams1('abba', array))
+//
+// console.log(anagrams('abba', array))
 
 /* Task 28
 Given a positive integer n written as abcd... (a, b, c, d... being digits) and a positive integer p
