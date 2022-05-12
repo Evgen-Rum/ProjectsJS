@@ -525,9 +525,9 @@ function countSmileys(arr) {
     const smile12 = ';~D'
     let counter = 0
     for (let i = 0; i < arr.length; i++) {
-        if (arr[i] === smile1 || arr[i] === smile2 || arr[i] === smile3 || arr[i] === smile4 || arr[i] == smile5 || arr[i] == smile6
-            || arr[i] === smile7 || arr[i] === smile8 || arr[i] === smile9 || arr[i] === smile10 || arr[i] === smile11 ||
-            arr[i] === smile12)
+        if (arr[i] === smile1 || arr[i] === smile2 || arr[i] === smile3 || arr[i] === smile4 || arr[i] === smile5
+            || arr[i] === smile6 || arr[i] === smile7 || arr[i] === smile8 || arr[i] === smile9 || arr[i] === smile10
+            || arr[i] === smile11 || arr[i] === smile12)
             counter++
     }
     return counter
