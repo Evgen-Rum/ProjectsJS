@@ -351,26 +351,43 @@ Write a function that will find all the anagrams of a word from a list.
 You will be given two inputs a word and an array with words.
 You should return an array of all the anagrams or an empty array if there are none.
  */
-// function anagrams(word, array) {
-//     let firstWord = word.split('').sort().join('')
-//     let anagramsArray = []
-//     for (let i = 0; i < array.length; i++) {
-//         if (array[i].split('').sort().join('') === firstWord) {
-//             anagramsArray.push(array[i])
-//         }
-//     }
-//     return anagramsArray
-// }
-//
-// function anagrams1(word, words) {
-//     return words.filter(w => reorder(w) === reorder(word) )
-// }
-//
-// function reorder(word) {
-//     return word.split('').sort().join('')
-// }
-//
-// console.log(anagrams('abba', ['aabb', 'abcd', 'bbaa', 'dada']))
+function anagrams(word, array) {
+    let firstWord = word.split('').sort().join('')
+    let anagramsArray = []
+    for (let i = 0; i < array.length; i++) {
+        if (array[i].split('').sort().join('') === firstWord) {
+            anagramsArray.push(array[i])
+        }
+    }
+    return anagramsArray
+}
+
+function anagrams1(word, words) {
+    return words.filter(w => reorder(w) === reorder(word) )
+}
+
+function reorder(word) {
+    return word.split('').sort().join('')
+}
+
+const array = ['aabb', 'abcd', 'bbaa', 'dada']
+
+Array.prototype.anagramFinder = function(word) {
+    let firstWord = word.split('').sort().join('')
+    let anagramsArray = []
+    for (let i = 0; i < this.length; i++) {
+        if (this[i].split('').sort().join('') === firstWord) {
+            anagramsArray.push(this[i])
+        }
+    }
+    return anagramsArray
+}
+
+console.log(array.anagramFinder('abba'))
+
+console.log(anagrams1('abba', array))
+
+console.log(anagrams('abba', array))
 
 /* Task 28
 Given a positive integer n written as abcd... (a, b, c, d... being digits) and a positive integer p
@@ -381,23 +398,23 @@ Is there an integer k such as : (a ^ p + b ^ (p+1) + c ^(p+2) + d ^ (p+3) + ...)
 If it is the case we will return k, if not return -1.
 Note: n and p will always be given as strictly positive integers.
  */
-function digPow(num, p) {
-    let numArr = Array.from('' + num).map(Number)
-    let result = 0
-    for (let i = 0; i < numArr.length; i++) {
-        result += Math.pow(numArr[i], (p + i))
-    }
-    if (result % num) {
-        return -1
-    } else {
-        return result / num
-    }
-}
-
-function digPow1(num, pow) {
-    let x = String(num).split('').reduce((pV, cV, index ) =>
-        pV + Math.pow(cV, pow + index), 0)
-    return x % num ? -1 : x / num
-}
-
-console.log(digPow1(89, 1))
+// function digPow(num, p) {
+//     let numArr = Array.from('' + num).map(Number)
+//     let result = 0
+//     for (let i = 0; i < numArr.length; i++) {
+//         result += Math.pow(numArr[i], (p + i))
+//     }
+//     if (result % num) {
+//         return -1
+//     } else {
+//         return result / num
+//     }
+// }
+//
+// function digPow1(num, pow) {
+//     let x = String(num).split('').reduce((pV, cV, index ) =>
+//         pV + Math.pow(cV, pow + index), 0)
+//     return x % num ? -1 : x / num
+// }
+//
+// console.log(digPow1(89, 1))
